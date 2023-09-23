@@ -240,3 +240,8 @@ function! CheckBackspace() abort
   return !col || getline('.')[col - 1]  =~# '\s'
 endfunction
 let g:coc_disable_startup_warning = 1
+let g:coc_global_extensions = [
+  \ 'coc-clangd',
+  \ 'coc-pyright',
+  \ ]
+"end of configuration of coc
