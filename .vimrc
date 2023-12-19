@@ -13,6 +13,7 @@ call plug#begin('~/.vim/plugged')
 	
 " Autocomplete
 Plug 'neoclide/coc.nvim', {'branch': 'release'}
+" Don't forget to download nodejs (sudo curl -sL install-node.vercel.app/lts | sudo bash)
 
 "自動調和背景與配色的關係
 "Plug 'junegunn/seoul256.vim'
