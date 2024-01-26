@@ -154,6 +154,8 @@ autocmd BufEnter * if tabpagenr('$') == 1 && winnr('$') == 1 && exists('b:NERDTr
 let NERDTreeShowLineNumbers=1
 " make sure relative line numbers are used
 autocmd FileType nerdtree setlocal relativenumber
+" show hidden file
+let NERDTreeShowHidden=1
 
   "for debugging in vim   //for help, see:https://www.dannyadam.com/blog/2019/05/debugging-in-vim/
 packadd termdebug       "auto add pack
