@@ -18,6 +18,9 @@ Plug 'neoclide/coc.nvim', {'branch': 'release'}
 "自動調和背景與配色的關係
 "Plug 'junegunn/seoul256.vim'
 
+" for writing HTML
+Plug 'mattn/emmet-vim'
+
 "讓ctrl-d變滑順
 "Plug 'psliwka/vim-smoothie'
 
@@ -248,3 +251,11 @@ let g:coc_global_extensions = [
   \ 'coc-pyright',
   \ ]
 "end of configuration of coc
+
+"# For emmet-vim
+"## only enable for html, css
+let g:user_emmet_install_global = 0
+autocmd FileType html,css EmmetInstall
+"## let tab be the trigger key of emmet
+"let g:user_emmet_expandabbr_key = '<tab>'
+let g:user_emmet_leader_key='<tab>'
