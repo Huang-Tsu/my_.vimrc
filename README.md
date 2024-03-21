@@ -6,7 +6,7 @@
   ```
 - cp .vimrc to your home dir
   ```
-  cp my_.vimrc ~/.vimrc
+  cp my_.vimrc/.vimrc ~/.vimrc
   ```
 - Install vim-plug(in unix)
   ```
