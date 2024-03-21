@@ -210,9 +210,11 @@ set expandtab
 "highlight NonText ctermbg=none
 "hi Normal ctermbg=none
 
-  "copy entire file to system clipboard
-noremap <F12> :%y+<CR>
 "To use this in wsl, First install package "vim-gtk"
+"# copy entire file to system clipboard
+"noremap <F12> :%y+<CR>
+"# copy selected (visual) text to clipboard
+vnoremap <F12> "+y
 
   "for nerdcommenter
 :let mapleader = ","
