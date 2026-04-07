@@ -26,6 +26,12 @@ Plug 'mattn/emmet-vim'
 
 Plug 'Preservim/nerdtree'
 
+"show context
+Plug 'wellle/context.vim'
+
+" show tag
+Plug 'preservim/tagbar'
+
 "color scheme
 Plug 'tyrannicaltoucan/vim-deep-space'
 Plug 'Huang-Tsu/vim-syntax-extra'
@@ -184,7 +190,7 @@ let Tlist_Exit_OnlyWindow = 1           " 如果taglist窗口是最後一個窗�
 let Tlist_Use_Right_Window = 1          " 在右側窗口中顯示taglist窗口
 let Tlist_Process_File_Always=1 				" 即時更新tags
 let Tlist_File_Fold_Auto_Close = 1 			" 自動摺疊
-nnoremap <silent> <F4> :TlistToggle<CR> " F8 為開啟/關閉 Tlist 的快速鍵
+"nnoremap <silent> <F4> :TlistToggle<CR> " F8 為開啟/關閉 Tlist 的快速鍵
 
 	"options for vim-cpp-modern
 " Disable function highlighting (affects both C and C++ files)
@@ -260,3 +266,14 @@ let g:user_emmet_install_global = 0
 autocmd FileType html,css EmmetInstall
 "## let tab be the trigger key of emmet
 "let g:user_emmet_expandabbr_key = '<tab>'
+
+" for content.vim
+let g:context_highlight_normal = 'CursorLine'
+let g:context_border_char = '─'
+
+" for tagbar
+nnoremap <silent> <F4> :TagbarToggle<CR>
+let g:tagbar_width = 35
+let g:tagbar_sort = 0
+let g:tagbar_compact = 1
+let g:tagbar_show_linenumbers = 1
